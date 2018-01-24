@@ -37,7 +37,7 @@ void print_times_table(int n)
 	}
 }
 
-#incluce "holberton.h"
+#include "holberton.h"
 /**
  * print2digits - print two digits of num
  *
