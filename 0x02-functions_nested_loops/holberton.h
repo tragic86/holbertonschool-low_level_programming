@@ -16,6 +16,4 @@ void print_times_table(int n);
 void print2digits(int product);
 void print3digits(int product);
 void print1digit(int product, int colum);
-
-
 #endif
