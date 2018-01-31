@@ -16,14 +16,14 @@ void puts_half(char *str)
 
 	length = _strlen(str);
 
-	if (length % 2 == 0)
+	if (length % 2 != 0)
 	{
-		string = length / 2;
+		string = (length / 2) + 1;
 
 	}
 	else
 	{
-		string = (length / 2) - 1;
+		string = length / 2;
 	}
 
 	i = string;
