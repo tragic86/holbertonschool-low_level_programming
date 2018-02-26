@@ -45,10 +45,10 @@ void print_all(const char * const format, ...)
 				list[x].f(ap);
 				empty = sep;
 			}
-			counter++;
+			x++;
 
 		}
-		x++;
+		counter++;
 	}
 
 	printf("\n");
