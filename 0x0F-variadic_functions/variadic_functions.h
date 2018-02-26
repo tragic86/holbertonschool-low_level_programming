@@ -9,12 +9,21 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 int _putchar(char c);
 
+/**
+ *struct all- struct
+ *
+ *@p: pointer
+ *@f: function pointer
+ *
+ *  struct for va argument
+ */
+
 typedef struct all
 {
 
 	char *p;
 	void (*f)();
-}all;
+} all;
 
 void print_char(va_list ap);
 void print_int(va_list ap);
