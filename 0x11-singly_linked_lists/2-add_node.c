@@ -40,7 +40,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	temp = 0;
 
-	while (new_node->str[temp] != 0)
+	while (new_node->str[temp] != '\0')
 	{
 
 		++temp;
