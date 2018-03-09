@@ -17,9 +17,9 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	unsigned long int mask = 1;
 
-	if (n == NULL)
+	if (n == 0)
 		return (-1);
-	if (index > 64)
+	if (index > 63)
 		return (-1);
 
 	mask = mask << index;
