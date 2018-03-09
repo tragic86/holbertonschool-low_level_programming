@@ -25,7 +25,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	mask = mask << index;
 	*n = *n | mask;
 
-	return (*n);
+	return (1);
 
 
 
