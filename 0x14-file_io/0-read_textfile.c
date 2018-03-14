@@ -16,6 +16,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t k;
 	char buff[1024];
 	int i;
+	ssize_t j;
 
 	if (filename == NULL)
 		return (0);
@@ -33,7 +34,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	buff[k] = '\0';
 
-	write(STDOUT_FILENO, buff, k);
+	j = write(STDOUT_FILENO, buff, k);
+	if (j == -1)
+		return (0);
 
 	close(i);
 
