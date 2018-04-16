@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * 
+ * dlistint_len - a function that returns the number of elements
+ *
+ * @h: head
  *
  *
- * 
+ * Return: number of elements
  *
- *
- * 
  *
  *
  */
