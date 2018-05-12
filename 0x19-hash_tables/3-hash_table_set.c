@@ -16,12 +16,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL || key == NULL)
 		return (0);
-	i = key_index(key, ht->size);
+	i = key_index(unsigned char *)key, ht->size);
 	new_node = ht->array[i];
 	while (new_node != NULL)
 	{
 
-		if (strcmp(key, ht->key) == 0)
+		if (strcmp(key, new_node->key) == 0)
 		{
 			free(new_node->value);
 			new_node->value = strdup(value);
